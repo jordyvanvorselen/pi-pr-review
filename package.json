@@ -1,0 +1,53 @@
+{
+  "name": "@jordyvanvorselen/pi-pr-review",
+  "version": "0.1.0",
+  "description": "Review a pull request with Pi by intent, structure and architecture. The agent reads the diff, you see visual summaries and make the calls.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jordy van Vorselen",
+  "files": [
+    "src/**/*.ts",
+    "prompts/*.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "pi-package",
+    "pi",
+    "coding-agent",
+    "code-review",
+    "pull-request",
+    "github",
+    "extension"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.ts",
+    "lint": "eslint . && npm run format",
+    "lint:fix": "eslint . --fix && npm run format:fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write . --log-level warn"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.5.0",
+    "@earendil-works/pi-tui": "^1.5.0",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.13.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.10",
+    "typebox": "1.3.27",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.1"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@jordyvanvorselen/pi-pr-review",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Review a pull request with Pi by intent, structure and architecture. The agent reads the diff, you see visual summaries and make the calls.",
   "type": "module",
   "license": "MIT",

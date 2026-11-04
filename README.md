@@ -6,10 +6,10 @@ The agent reads the diff. You see short visual summaries and make the calls: bar
 
 ## Install
 
-From git:
+From npm:
 
 ```bash
-pi install git:github.com/jordyvanvorselen/pi-pr-review
+pi install npm:@jordyvanvorselen/pi-pr-review
 ```
 
 From a local folder:
